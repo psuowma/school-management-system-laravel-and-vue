@@ -2,5 +2,5 @@
 @section('page_title', 'My Dashboard')
 
 @section('content')
-    <h2>WELCOME {{ Auth::user()->name }}. This is your DASHBOARD</h2>
+    <h2>КОШ КЕЛДИҢИЗ {{ Auth::user()->name }}. Бул сиздин Дэшборд:</h2>
     @endsection

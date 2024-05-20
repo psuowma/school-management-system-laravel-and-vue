@@ -32,8 +32,8 @@
                                         @if($ttr->exam_id)
                                             {{--EXAM DATE--}}
                                             <div class="form-group row">
-                                                <label class="col-lg-3 col-form-label font-weight-semibold">Exam
-                                                    Date <span class="text-danger">*</span></label>
+                                                <label class="col-lg-3 col-form-label font-weight-semibold">Экзамен
+                                                    Датасы <span class="text-danger">*</span></label>
                                                 <div class="col-lg-9">
                                                     <input autocomplete="off" name="exam_date"
                                                            value="{{ $tt->exam_date }}" required
@@ -46,12 +46,12 @@
                                             {{--DAY--}}
                                             <div class="form-group row">
                                                 <label for="day"
-                                                       class="col-lg-3 col-form-label font-weight-semibold">Day
+                                                       class="col-lg-3 col-form-label font-weight-semibold">Күн
                                                     <span class="text-danger">*</span></label>
                                                 <div class="col-lg-9">
                                                     <select id="day" name="day" required type="text"
                                                             class="form-control select"
-                                                            data-placeholder="Select Day...">
+                                                            data-placeholder="Күн танда...">
                                                         @foreach(Qs::getDaysOfTheWeek() as $dw)
                                                             <option {{ $tt->day == $dw ? 'selected' : '' }} value="{{ $dw }}">{{ $dw }}</option>
                                                         @endforeach
@@ -64,10 +64,10 @@
                                         {{--SUBJECT--}}
                                         <div class="form-group row">
                                             <label for="subject_id"
-                                                   class="col-lg-3 col-form-label font-weight-semibold">Subject
+                                                   class="col-lg-3 col-form-label font-weight-semibold">Сабактар
                                                 <span class="text-danger">*</span></label>
                                             <div class="col-lg-9">
-                                                <select required data-placeholder="Select Subject"
+                                                <select required data-placeholder="Сабактар танда"
                                                         class="form-control select-search"
                                                         name="subject_id" id="subject_id">
                                                     @foreach($subjects as $sub)
@@ -80,11 +80,11 @@
                                         {{--TIME SLOT--}}
         <div class="form-group row">
 
-                <label for="ts_id" class="col-lg-3 col-form-label font-weight-semibold">Time Slot <span
+                <label for="ts_id" class="col-lg-3 col-form-label font-weight-semibold">Убакыт аралыгы <span
                             class="text-danger">*</span></label>
 
                 <div class="col-lg-9">
-                    <select data-placeholder="Select Time..." required class="select form-control" name="ts_id" id="ts_id">
+                    <select data-placeholder="Убакыт танда" required class="select form-control" name="ts_id" id="ts_id">
 
                         <option value=""></option>
                         @foreach($time_slots as $tms)
@@ -96,7 +96,7 @@
 
                                         {{--SUBMIT--}}
                                         <div class="text-right">
-                                            <button type="submit" class="btn btn-primary">Submit Form <i class="icon-paperplane ml-2"></i>
+                                            <button type="submit" class="btn btn-primary">Сактоо <i class="icon-paperplane ml-2"></i>
                                             </button>
                                         </div>
                                     </form>
@@ -108,8 +108,8 @@
             </div>
         @endforeach
     @else
-        <div class="alert alert-info text-center">There are NO Records to Display. Add Subjects To The TimeTable Record
-            & Refresh the page
+        <div class="alert alert-info text-center">Көрсөтүү үчүн эч кандай маалымат жок. Биринчиден расписаниеге сабактарды кош
+            & Баракты жаңыртуу керек
         </div>
     @endif
 </div>

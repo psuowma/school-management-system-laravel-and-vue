@@ -30,6 +30,7 @@
 
 {{--Calendar--}}
 <script src="{{ asset('global_assets/js/plugins/ui/fullcalendar/fullcalendar.min.js') }}"></script>
+<script src="{{ asset('global_assets/js/plugins/ui/fullcalendar/lang/ru.js') }}"></script>
 
 
 <script src=" {{ asset('assets/js/app.js') }} "></script>

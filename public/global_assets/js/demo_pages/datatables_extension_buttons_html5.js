@@ -29,9 +29,9 @@ var DatatableButtonsHtml5 = function() {
             autoWidth: false,
             dom: '<"datatable-header"fBl><"datatable-scroll"t><"datatable-footer"ip>',
             language: {
-                search: '<span>Filter:</span> _INPUT_',
-                searchPlaceholder: 'Type to filter...',
-                lengthMenu: '<span>Show:</span> _MENU_',
+                search: '<span>Фильтр:</span> _INPUT_',
+                searchPlaceholder: 'Фильтрлөө үчүн жаз...',
+                lengthMenu: '<span>Көрсөт:</span> _MENU_',
                 paginate: { 'first': 'First', 'last': 'Last', 'next': $('html').attr('dir') == 'rtl' ? '&larr;' : '&rarr;', 'previous': $('html').attr('dir') == 'rtl' ? '&rarr;' : '&larr;' }
             }
         });
@@ -52,7 +52,7 @@ var DatatableButtonsHtml5 = function() {
                     'pdfHtml5',
                     {
                         extend: 'colvis',
-                        text: '<i class="icon-three-bars"></i> Visibility',
+                        text: '<i class="icon-three-bars"></i>Көрүнүшү',
                         className: 'btn bg-blue btn-icon dropdown-toggle'
                     }
                 ]
@@ -98,7 +98,7 @@ var DatatableButtonsHtml5 = function() {
                     },
                     {
                         extend: 'colvis',
-                        text: '<i class="icon-three-bars"></i> Visibility',
+                        text: '<i class="icon-three-bars"></i> Көрүнүшү',
                         className: 'btn bg-blue btn-icon dropdown-toggle'
                     }
                 ]

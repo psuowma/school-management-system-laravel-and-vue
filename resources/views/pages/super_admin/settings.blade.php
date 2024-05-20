@@ -1,10 +1,10 @@
 @extends('layouts.master')
-@section('page_title', 'Manage System Settings')
+@section('page_title', 'Системанын орнотууларын жаңыртуу')
 @section('content')
 
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h6 class="card-title font-weight-semibold">Update System Settungs </h6>
+            <h6 class="card-title font-weight-semibold">Системанын орнотууларын жаңыртуу </h6>
             {!! Qs::getPanelOptions() !!}
         </div>
 
@@ -14,13 +14,13 @@
             <div class="row">
                 <div class="col-md-6 border-right-2 border-right-blue-400">
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">Name of School <span class="text-danger">*</span></label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Мектептин аты <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input name="system_name" value="{{ $s['system_name'] }}" required type="text" class="form-control" placeholder="Name of School">
+                                <input name="system_name" value="{{ $s['system_name'] }}" required type="text" class="form-control" placeholder="Мектептин аты">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="current_session" class="col-lg-3 col-form-label font-weight-semibold">Current Session <span class="text-danger">*</span></label>
+                            <label for="current_session" class="col-lg-3 col-form-label font-weight-semibold">Учурдакы Сессия <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
                                 <select data-placeholder="Choose..." required name="current_session" id="current_session" class="select-search form-control">
                                     <option value=""></option>
@@ -31,31 +31,31 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Acronym</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Мектептин аббревиатурасы</label>
                             <div class="col-lg-9">
-                                <input name="system_title" value="{{ $s['system_title'] }}" type="text" class="form-control" placeholder="School Acronym">
+                                <input name="system_title" value="{{ $s['system_title'] }}" type="text" class="form-control" placeholder="Мектептин аббревиатурасы">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">Phone</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold"></label>
                             <div class="col-lg-9">
                                 <input name="phone" value="{{ $s['phone'] }}" type="text" class="form-control" placeholder="Phone">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Email</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Мектептин электрондук почтасы</label>
                             <div class="col-lg-9">
                                 <input name="system_email" value="{{ $s['system_email'] }}" type="email" class="form-control" placeholder="School Email">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">School Address <span class="text-danger">*</span></label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Мектеп дареги <span class="text-danger">*</span></label>
                             <div class="col-lg-9">
-                                <input required name="address" value="{{ $s['address'] }}" type="text" class="form-control" placeholder="School Address">
+                                <input required name="address" value="{{ $s['address'] }}" type="text" class="form-control" placeholder="Мектеп дареги">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">This Term Ends</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Бул чейрек бүтөт</label>
                             <div class="col-lg-6">
                                 <input name="term_ends" value="{{ $s['term_ends'] }}" type="text" class="form-control date-pick" placeholder="Date Term Ends">
                             </div>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-lg-3 col-form-label font-weight-semibold">Next Term Begins</label>
+                            <label class="col-lg-3 col-form-label font-weight-semibold">Кийинки чейрек башталат</label>
                             <div class="col-lg-6">
                                 <input name="term_begins" value="{{ $s['term_begins'] }}" type="text" class="form-control date-pick" placeholder="Date Term Ends">
                             </div>
@@ -72,7 +72,7 @@
                                 <span class="font-weight-bold font-italic">M-D-Y or M/D/Y </span>
                             </div>
                         </div>
-                        <div class="form-group row">
+                  <!--       <div class="form-group row">
                             <label for="lock_exam" class="col-lg-3 col-form-label font-weight-semibold">Lock Exam</label>
                             <div class="col-lg-3">
                                 <select class="form-control select" name="lock_exam" id="lock_exam">
@@ -83,12 +83,12 @@
                             <div class="col-lg-6">
                                     <span class="font-weight-bold font-italic text-info-800">{{ __('msg.lock_exam') }}</span>
                             </div>
-                        </div>
+                        </div> -->
                 </div>
                 <div class="col-md-6">
                     {{--Fees--}}
                <fieldset>
-                   <legend><strong>Next Term Fees</strong></legend>
+                   <legend><strong>Кийинки чейрек үчүн төлөмдөр</strong></legend>
                    @foreach($class_types as $ct)
                    <div class="form-group row">
                        <label class="col-lg-3 col-form-label font-weight-semibold">{{ $ct->name }}</label>
@@ -102,7 +102,7 @@
 
                     {{--Logo--}}
                     <div class="form-group row">
-                        <label class="col-lg-3 col-form-label font-weight-semibold">Change Logo:</label>
+                        <label class="col-lg-3 col-form-label font-weight-semibold">Логотипти өзгөртүү:</label>
                         <div class="col-lg-9">
                             <div class="mb-3">
                                 <img style="width: 100px" height="100px" src="{{ $s['logo'] }}" alt="">
@@ -116,7 +116,7 @@
                 <hr class="divider">
 
                 <div class="text-right">
-                    <button type="submit" class="btn btn-danger">Submit form <i class="icon-paperplane ml-2"></i></button>
+                    <button type="submit" class="btn btn-danger">Сактоо <i class="icon-paperplane ml-2"></i></button>
                 </div>
             </form>
         </div>

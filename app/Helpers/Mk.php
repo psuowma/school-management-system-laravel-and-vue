@@ -17,7 +17,7 @@ class Mk extends Qs
 
     public static function getRemarks()
     {
-        return ['Average', 'Credit', 'Distinction', 'Excellent', 'Fail', 'Fair', 'Good', 'Pass', 'Poor', 'Very Good', 'Very Poor'];
+        return ['Мыкты', 'Абдан жакшы', 'Жакшы', 'Канааттандырарлык', 'Жетишсиз', 'өтпөй калуу'];
     }
 
     /** ADD ORDINAL SUFFIX TO POSITION **/

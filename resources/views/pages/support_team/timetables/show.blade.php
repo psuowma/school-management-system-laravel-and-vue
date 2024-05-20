@@ -1,20 +1,20 @@
 @extends('layouts.master')
-@section('page_title', 'View TimeTable')
+@section('page_title', 'Расписание көрүү ')
 @section('content')
 
     <div class="card">
         <div class="card-header">
             <div class="row">
-                <div class="col-md-4"><h6 class="card-title"><strong>Name: </strong> {{ $ttr->name }}</h6></div>
-                <div class="col-md-4"><h6 class="card-title"><strong>Class: </strong> {{ $my_class->name }}</h6></div>
-                <div class="col-md-4"><h6 class="card-title"><strong>Year: </strong> {{ ($ttr->exam_id) ? 'Exam TimeTable' : 'Class TimeTable' }} {{ '('.$ttr->year.')' }}</h6></div>
+                <div class="col-md-4"><h6 class="card-title"><strong>Аталышы: </strong> {{ $ttr->name }}</h6></div>
+                <div class="col-md-4"><h6 class="card-title"><strong>Класс: </strong> {{ $my_class->name }}</h6></div>
+                <div class="col-md-4"><h6 class="card-title"><strong>Жыл: </strong> {{ ($ttr->exam_id) ? 'Exam TimeTable' : 'Класс Расписание' }} {{ '('.$ttr->year.')' }}</h6></div>
             </div>
         </div>
             <div class="card-body">
                 <table class="table table-responsive table-striped">
                     <thead>
                     <tr>
-                        <th rowspan="2">Time <i class="icon-arrow-right7 ml-2"></i> <br> Date<i class="icon-arrow-down7 ml-2"></i>
+                        <th rowspan="2">Саат <i class="icon-arrow-right7 ml-2"></i> <br> Дата<i class="icon-arrow-down7 ml-2"></i>
                         </th>
                         @foreach($time_slots as $tms)
                             <th rowspan="2">{{ $tms->time_from }} <br>
@@ -40,7 +40,7 @@
                 </table>
                 {{--Print Button--}}
                 <div class="text-center mt-4">
-                    <a target="_blank" href="{{ route('ttr.print', $ttr->id) }}" class="btn btn-danger btn-lg"><i class="icon-printer mr-2"></i> Print Timetable</a>
+                    <a target="_blank" href="{{ route('ttr.print', $ttr->id) }}" class="btn btn-danger btn-lg"><i class="icon-printer mr-2"></i>Расписание басып чыгаруу</a>
                 </div>
             </div>
         </div>

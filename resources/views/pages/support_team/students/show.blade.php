@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('page_title', 'Student Profile - '.$sr->user->name)
+@section('page_title', 'Окуучунун Профили - '.$sr->user->name)
 @section('content')
 <div class="row">
     <div class="col-md-3 text-center">
@@ -26,35 +26,35 @@
                         <table class="table table-bordered">
                             <tbody>
                             <tr>
-                                <td class="font-weight-bold">Name</td>
+                                <td class="font-weight-bold">Аты жөнү</td>
                                 <td>{{ $sr->user->name }}</td>
                             </tr>
-                            <tr>
+                           <!--  <tr>
                                 <td class="font-weight-bold">ADM_NO</td>
                                 <td>{{ $sr->adm_no }}</td>
-                            </tr>
+                            </tr> -->
                             <tr>
-                                <td class="font-weight-bold">Class</td>
+                                <td class="font-weight-bold">Класс</td>
                                 <td>{{ $sr->my_class->name.' '.$sr->section->name }}</td>
                             </tr>
                             @if($sr->my_parent_id)
                                 <tr>
-                                    <td class="font-weight-bold">Parent</td>
+                                    <td class="font-weight-bold">Ата-энеси</td>
                                     <td>
                                         <span><a target="_blank" href="{{ route('users.show', Qs::hash($sr->my_parent_id)) }}">{{ $sr->my_parent->name }}</a></span>
                                     </td>
                                 </tr>
                             @endif
                             <tr>
-                                <td class="font-weight-bold">Year Admitted</td>
+                                <td class="font-weight-bold">Кабыл алынган жылы</td>
                                 <td>{{ $sr->year_admitted }}</td>
                             </tr>
                             <tr>
-                                <td class="font-weight-bold">Gender</td>
+                                <td class="font-weight-bold">Гендер</td>
                                 <td>{{ $sr->user->gender }}</td>
                             </tr>
                             <tr>
-                                <td class="font-weight-bold">Address</td>
+                                <td class="font-weight-bold">Дарек</td>
                                 <td>{{ $sr->user->address }}</td>
                             </tr>
                             @if($sr->user->email)
@@ -65,41 +65,41 @@
                             @endif
                             @if($sr->user->phone)
                                 <tr>
-                                    <td class="font-weight-bold">Phone</td>
+                                    <td class="font-weight-bold">Телефон</td>
                                     <td>{{$sr->user->phone.' '.$sr->user->phone2 }}</td>
                                 </tr>
                             @endif
                             <tr>
-                                <td class="font-weight-bold">Birthday</td>
+                                <td class="font-weight-bold">Туулган күн</td>
                                 <td>{{$sr->user->dob }}</td>
                             </tr>
                             @if($sr->user->bg_id)
                             <tr>
-                                <td class="font-weight-bold">Blood Group</td>
+                                <td class="font-weight-bold">Кан группасы</td>
                                 <td>{{$sr->user->blood_group->name }}</td>
                             </tr>
                             @endif
                             @if($sr->user->nal_id)
                             <tr>
-                                <td class="font-weight-bold">Nationality</td>
+                                <td class="font-weight-bold">Улуту</td>
                                 <td>{{$sr->user->nationality->name }}</td>
                             </tr>
                             @endif
                             @if($sr->user->state_id)
                             <tr>
-                                <td class="font-weight-bold">State</td>
+                                <td class="font-weight-bold">Шаар</td>
                                 <td>{{$sr->user->state->name }}</td>
                             </tr>
                             @endif
                             @if($sr->user->lga_id)
                             <tr>
-                                <td class="font-weight-bold">LGA</td>
+                                <td class="font-weight-bold">Аймак</td>
                                 <td>{{$sr->user->lga->name }}</td>
                             </tr>
                             @endif
                             @if($sr->dorm_id)
                                 <tr>
-                                    <td class="font-weight-bold">Dormitory</td>
+                                    <td class="font-weight-bold">Жатакана</td>
                                     <td>{{$sr->dorm->name.' '.$sr->dorm_room_no }}</td>
                                 </tr>
                             @endif

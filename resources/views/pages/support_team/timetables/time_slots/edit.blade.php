@@ -1,9 +1,9 @@
 @extends('layouts.master')
-@section('page_title', 'Edit Time Slot')
+@section('page_title', 'Убакыт аралыктарын түзөтүү')
 @section('content')
 <div class="card">
     <div class="card-header header-elements-inline">
-        <h6 class="font-weight-bold card-title">Edit Time Slots</h6>
+        <h6 class="font-weight-bold card-title">Убакыт аралыктарын түзөтүү</h6>
         {!! Qs::getPanelOptions() !!}
     </div>
 
@@ -15,7 +15,7 @@
 
                 {{--TIME BEGIN--}}
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label font-weight-semibold">Start Time <span
+                    <label class="col-lg-3 col-form-label font-weight-semibold">Башталуу сааты<span
                                 class="text-danger">*</span></label>
 
                     <div class="col-lg-3">
@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <select data-placeholder="Minute" required class="select-search form-control" name="min_from" id="min_from">
+                        <select data-placeholder="Минута" required class="select-search form-control" name="min_from" id="min_from">
 
                             <option value=""></option>
                             <option value="00">00</option>
@@ -54,10 +54,10 @@
 
                 {{--TIME END--}}
                 <div class="form-group row">
-                    <label class="col-lg-3 col-form-label font-weight-semibold">End Time <span class="text-danger">*</span></label>
+                    <label class="col-lg-3 col-form-label font-weight-semibold">Бүтүү сааты <span class="text-danger">*</span></label>
 
                     <div class="col-lg-3">
-                        <select data-placeholder="Hour" required class="select-search form-control" name="hour_to" id="hour_to">
+                        <select data-placeholder="Саат" required class="select-search form-control" name="hour_to" id="hour_to">
 
                             <option value=""></option>
                             @for($t=1; $t<=12; $t++)

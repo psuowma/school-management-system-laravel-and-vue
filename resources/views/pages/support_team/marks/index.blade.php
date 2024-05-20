@@ -1,9 +1,9 @@
 @extends('layouts.master')
-@section('page_title', 'Manage Exam Marks')
+@section('page_title', 'Экзамен бааларын башкаруу')
 @section('content')
     <div class="card">
         <div class="card-header header-elements-inline">
-            <h5 class="card-title"><i class="icon-books mr-2"></i> Manage Exam Marks</h5>
+            <h5 class="card-title"><i class="icon-books mr-2"></i> Экзамен бааларын башкаруу</h5>
             {!! Qs::getPanelOptions() !!}
         </div>
 

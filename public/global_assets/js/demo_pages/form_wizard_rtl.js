@@ -31,9 +31,9 @@ var FormWizard = function() {
             transitionEffect: 'fade',
             titleTemplate: '<span class="number">#index#</span> #title#',
             labels: {
-                previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                previous: '<i class="icon-arrow-right14 mr-2" /> Мурунку',
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             onFinished: function (event, currentIndex) {
                 alert('Form submitted.');
@@ -48,9 +48,9 @@ var FormWizard = function() {
             titleTemplate: '<span class="number">#index#</span> #title#',
             loadingTemplate: '<div class="card-body text-center"><i class="icon-spinner2 spinner mr-2"></i>  #text#</div>',
             labels: {
-                previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                previous: '<i class="icon-arrow-right14 mr-2" /> Мурунку',
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             onContentLoaded: function (event, currentIndex) {
                 $(this).find('.card-body').addClass('hide');
@@ -70,9 +70,9 @@ var FormWizard = function() {
             bodyTag: 'fieldset',
             titleTemplate: '<span class="number">#index#</span> #title#',
             labels: {
-                previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                previous: '<i class="icon-arrow-right14 mr-2" /> Мурунку',
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             transitionEffect: 'fade',
             saveState: true,
@@ -88,9 +88,9 @@ var FormWizard = function() {
             bodyTag: 'fieldset',
             titleTemplate: '<span class="number">#index#</span> #title#',
             labels: {
-                previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                previous: '<i class="icon-arrow-right14 mr-2" /> Мурунку',
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             transitionEffect: 'fade',
             startIndex: 2,
@@ -109,8 +109,8 @@ var FormWizard = function() {
             titleTemplate: '<span class="number">#index#</span> #title#',
             labels: {
                 previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             onFinished: function (event, currentIndex) {
                 alert('Form submitted.');
@@ -138,9 +138,9 @@ var FormWizard = function() {
             bodyTag: 'fieldset',
             titleTemplate: '<span class="number">#index#</span> #title#',
             labels: {
-                previous: '<i class="icon-arrow-right14 mr-2" /> Previous',
-                next: 'Next <i class="icon-arrow-left13 ml-2" />',
-                finish: 'Submit form <i class="icon-arrow-left13 ml-2" />'
+                previous: '<i class="icon-arrow-right14 mr-2" /> Мурунку',
+                next: 'Кийинки <i class="icon-arrow-left13 ml-2" />',
+                finish: 'Сактоо <i class="icon-arrow-left13 ml-2" />'
             },
             transitionEffect: 'fade',
             autoFocus: true,
